@@ -1,0 +1,456 @@
+{
+  "generated_at": "2026-09-07T20:31:43.814525+00:00",
+  "models_scanned": 15,
+  "cluster_count": 28,
+  "emerging_count": 11,
+  "clusters": [
+    {
+      "make": "FORD",
+      "model": "F-150",
+      "cluster_size": 1275,
+      "date_min": "2026-04-27",
+      "date_max": "2026-09-03",
+      "recency_ratio_90d": 0.693,
+      "dominant_component": "POWER TRAIN",
+      "example_snippets": [
+        "I am reporting a serious safety-related transmission issue involving my 2021 Ford F-150 equipped with the 10R80 automatic transmission.  On multiple occasions during normal driving, the transmission h",
+        "I had Ford Safety Recall 26S28 performed on my 2015 F-150 for the unintended transmission downshift issue. Since the recall, my truck has experienced multiple unintended downshift events. Today, this "
+      ],
+      "known_recall_count": 18,
+      "latest_known_recall_date": "31/08/2018",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "FORD",
+      "model": "ESCAPE",
+      "cluster_size": 1323,
+      "date_min": "2026-03-14",
+      "date_max": "2026-09-03",
+      "recency_ratio_90d": 0.518,
+      "dominant_component": "ENGINE",
+      "example_snippets": [
+        "My Ford Escape Titanium 2.0L 2017 started overheating. The coolant had just disappeared. The car sputtered in the morning with large plumes of white smoke. Due to the overheating my thermostat failed.",
+        "The contact owns a 2015 Ford Escape. The contact received notification of NHTSA Campaign Number: 25V695000 (Back Over Prevention); however, the part to do the recall repair was not yet available. The "
+      ],
+      "known_recall_count": 4,
+      "latest_known_recall_date": "18/12/2017",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "HONDA",
+      "model": "CR-V",
+      "cluster_size": 993,
+      "date_min": "2025-12-23",
+      "date_max": "2026-09-03",
+      "recency_ratio_90d": 0.413,
+      "dominant_component": "STEERING",
+      "example_snippets": [
+        "We took our 2008 honda crv to the Coggin Honda dealership in December 2025 to do a safety inspection, as we noted severe frame rust.  In January 2026, the dealership indicated that we had to release t",
+        "I own a 2024 Honda CR-V EX-L with approximately 59,628 miles.  While driving the vehicle, multiple warning lights began flashing on the dashboard. At the same time, the vehicle became difficult to dri"
+      ],
+      "known_recall_count": 5,
+      "latest_known_recall_date": "27/09/2018",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "HONDA",
+      "model": "ACCORD",
+      "cluster_size": 452,
+      "date_min": "2026-01-12",
+      "date_max": "2026-09-02",
+      "recency_ratio_90d": 0.458,
+      "dominant_component": "ENGINE",
+      "example_snippets": [
+        "I own a 2018 Honda Accord Sport 2.0T that has been consistently maintained through authorized Honda dealerships. On July 30, 2026, at 135,968 miles, I took my vehicle to Nalley Honda for a Blind Spot ",
+        "I own a 2018 Honda Accord Sport 2.0T that has been consistently maintained through authorized Honda dealerships. On July 30, 2026, at 135,968 miles, I took my vehicle to Nalley Honda for a Blind Spot "
+      ],
+      "known_recall_count": 6,
+      "latest_known_recall_date": "28/05/2020",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL Y",
+      "cluster_size": 442,
+      "date_min": "2025-10-16",
+      "date_max": "2026-09-02",
+      "recency_ratio_90d": 0.43,
+      "dominant_component": "STEERING",
+      "example_snippets": [
+        "The contact owns a 2026 Tesla Model Y. The contact stated that while the vehicle was in Full Self-Driving (FSD) Mode, while reversing into a parking space, the vehicle initially stopped while approach",
+        "It is a safety complaint about the automated parking/FSD reverse maneuver. My brand-new Tesla Model Y (VIN: [[XXX]]), which I purchased XXX and which had only 819 miles on the odometer at time of the "
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "30/05/2025",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "HONDA",
+      "model": "PILOT",
+      "cluster_size": 372,
+      "date_min": "2025-11-05",
+      "date_max": "2026-09-02",
+      "recency_ratio_90d": 0.43,
+      "dominant_component": "ENGINE",
+      "example_snippets": [
+        "The contact owns a 2019 Honda Pilot. The contact stated that the check engine warning light was illuminated. The vehicle was taken to the dealer and was diagnosed with fuel injector failure. The conta",
+        "The contact owns a 2019 Honda Pilot. The contact stated that the check engine warning light was illuminated. The vehicle was taken to the dealer and was diagnosed with fuel injector failure. The conta"
+      ],
+      "known_recall_count": 13,
+      "latest_known_recall_date": "31/10/2019",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "FORD",
+      "model": "F-150",
+      "cluster_size": 19,
+      "date_min": "2026-05-28",
+      "date_max": "2026-08-21",
+      "recency_ratio_90d": 0.947,
+      "dominant_component": "POWER TRAIN",
+      "example_snippets": [
+        "See attached document for complaint",
+        "See attached document for complaint"
+      ],
+      "known_recall_count": 18,
+      "latest_known_recall_date": "31/08/2018",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "HONDA",
+      "model": "PILOT",
+      "cluster_size": 26,
+      "date_min": "2025-12-19",
+      "date_max": "2026-08-18",
+      "recency_ratio_90d": 0.462,
+      "dominant_component": "SEAT BELTS",
+      "example_snippets": [
+        "the right rear seat safety belt warning keeps going off as if the passenger does not have the seat belt fastened although they do have it fastened.",
+        "the seatbelt alarm on the passenger side middle row seat keeps beeping and flashing the seatbelt warning despite the passenger being bucked in. The dealer says the belt is covered under warrant but th"
+      ],
+      "known_recall_count": 13,
+      "latest_known_recall_date": "31/10/2019",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "FORD",
+      "model": "ESCAPE",
+      "cluster_size": 16,
+      "date_min": "2026-04-16",
+      "date_max": "2026-08-21",
+      "recency_ratio_90d": 0.75,
+      "dominant_component": "BACK OVER PREVENTION",
+      "example_snippets": [
+        "See attached document for complaint.",
+        "See attached document for complaint."
+      ],
+      "known_recall_count": 4,
+      "latest_known_recall_date": "18/12/2017",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "HONDA",
+      "model": "CR-V",
+      "cluster_size": 17,
+      "date_min": "2026-03-29",
+      "date_max": "2026-07-22",
+      "recency_ratio_90d": 0.471,
+      "dominant_component": "POWER TRAIN",
+      "example_snippets": [
+        "While making a right turn from a stop the powertrain briefly lost power and the car slowed before accelerating normally",
+        "While accelerating from a stop the powertrain briefly lost power and the car slowed before accelerating normally "
+      ],
+      "known_recall_count": 5,
+      "latest_known_recall_date": "27/09/2018",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "FORD",
+      "model": "EXPLORER",
+      "cluster_size": 16,
+      "date_min": "2026-01-06",
+      "date_max": "2026-08-07",
+      "recency_ratio_90d": 0.5,
+      "dominant_component": "BACK OVER PREVENTION",
+      "example_snippets": [
+        "The contact owns a 2015 Ford Explorer. The contact received notification for NHTSA Campaign Number: 25V695000 (Back Over Prevention); however, the part to do the recall repair was not yet available. T",
+        "The contact owns a 2015 Ford Explorer. The contact received notification of NHTSA Campaign Number: 25V695000 (Back Over Prevention); however, the part to do the recall repair was not yet available. Th"
+      ],
+      "known_recall_count": 33,
+      "latest_known_recall_date": "30/09/2019",
+      "is_emerging_signal": true
+    },
+    {
+      "make": "HONDA",
+      "model": "ODYSSEY",
+      "cluster_size": 629,
+      "date_min": "2026-03-07",
+      "date_max": "2026-09-03",
+      "recency_ratio_90d": 0.66,
+      "dominant_component": "ELECTRICAL SYSTEM",
+      "example_snippets": [
+        "While stopped at a red light, the Auto Stop/Start system shut off the engine as designed but then failed to restart it. The vehicle remained stalled in the intersection for several minutes while I att",
+        "The infotainment system and back up camera screen went completely black. We took it to Howdy Honda since there was a NHTSA Recall 23V-482 that they had fixed once before. Now though, they are saying t"
+      ],
+      "known_recall_count": 2,
+      "latest_known_recall_date": "21/05/2026",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "JEEP",
+      "model": "WRANGLER",
+      "cluster_size": 192,
+      "date_min": "2026-01-12",
+      "date_max": "2026-09-01",
+      "recency_ratio_90d": 0.359,
+      "dominant_component": "SERVICE BRAKES",
+      "example_snippets": [
+        "The ABS control module on my 2014 Jeep Wrangler JK failed approximately four years ago. Since that time, I have been unable to obtain a replacement module through Jeep/Mopar, leaving the vehicle witho",
+        "ABS module failed forcing jeep into limp mode. The jeep dealership said the part is on indefinite back order.  C2200 "
+      ],
+      "known_recall_count": 11,
+      "latest_known_recall_date": "30/10/2025",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "FORD",
+      "model": "EDGE",
+      "cluster_size": 431,
+      "date_min": "2025-09-09",
+      "date_max": "2026-09-02",
+      "recency_ratio_90d": 0.153,
+      "dominant_component": "SERVICE BRAKES, HYDRAULIC",
+      "example_snippets": [
+        "The contact owns a 2019 Ford Edge. The contact stated that while driving 25 MPH, the accelerator pedal was depressed; however, the vehicle failed to accelerate as intended. The vehicle shuddered while",
+        "The contact owns a 2015 Ford Edge. The contact stated that while reversing at approximately 5 MPH, the rear-view camera became darkened. No warning lights were illuminated. The contact received notifi"
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "27/03/2017",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "FORD",
+      "model": "FUSION",
+      "cluster_size": 552,
+      "date_min": "2025-04-18",
+      "date_max": "2026-09-02",
+      "recency_ratio_90d": 0.114,
+      "dominant_component": "STEERING",
+      "example_snippets": [
+        "The contact owns a 2016 Ford Fusion. The contact received notification of NHTSA Campaign Number: 25V695000 (Back Over Prevention); however, the part to do the recall repair was unavailable. The contac",
+        "The contact owns a 2013 Ford Fusion. The contact stated that while stopped in a drive-thru, there was an abnormal hissing sound coming from the brake pedal. There was no warning light illuminated. The"
+      ],
+      "known_recall_count": 13,
+      "latest_known_recall_date": "29/08/2019",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "RAM",
+      "model": "1500",
+      "cluster_size": 80,
+      "date_min": "2026-02-23",
+      "date_max": "2026-08-28",
+      "recency_ratio_90d": 0.4,
+      "dominant_component": "STEERING",
+      "example_snippets": [
+        "The contact owns a 2015 Ram 1500. The contact stated that while driving at an undisclosed speed, the ABS and the Electronic Stability Control (ESC) warning lights illuminated. Additionally, the cruise",
+        "The contact owns a 2015 Ram 1500. The contact stated that while driving at an undisclosed speed, the ABS and the Electronic Stability Control (ESC) warning lights illuminated. Additionally, the cruise"
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "30/07/2026",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "JEEP",
+      "model": "GRAND CHEROKEE",
+      "cluster_size": 181,
+      "date_min": "2025-11-03",
+      "date_max": "2026-08-19",
+      "recency_ratio_90d": 0.144,
+      "dominant_component": "ELECTRICAL SYSTEM",
+      "example_snippets": [
+        "The contact owns a 2025 Jeep Grand Cherokee. While the contact\u00e2\u0080\u0099s daughter was driving at an undisclosed speed on the way to work, another driver crossed the road and crashed into the vehicle. The ai",
+        "The contact owns a 2023 Jeep Grand Cherokee. The contact received notification of NHTSA Campaign Number: 25V766000 (ENGINE); however, the part to do the recall repair was unavailable. The contact stat"
+      ],
+      "known_recall_count": 15,
+      "latest_known_recall_date": "30/10/2025",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "RAM",
+      "model": "1500",
+      "cluster_size": 32,
+      "date_min": "2026-02-21",
+      "date_max": "2026-09-03",
+      "recency_ratio_90d": 0.719,
+      "dominant_component": "SERVICE BRAKES",
+      "example_snippets": [
+        "The ABS/brake warning lights illuminated on my 2017 Ram 1500. I have not noticed a difference in normal braking performance. Diagnostic testing identified codes C2200-49 related to an internal ABS mod",
+        "The ABS/brake warning lights illuminated on my 2017 Ram 1500. I have not noticed a difference in normal braking performance. Diagnostic testing identified codes C2200-49 related to an internal ABS mod"
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "30/07/2026",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "JEEP",
+      "model": "WRANGLER",
+      "cluster_size": 55,
+      "date_min": "2026-01-12",
+      "date_max": "2026-08-25",
+      "recency_ratio_90d": 0.345,
+      "dominant_component": "ELECTRICAL SYSTEM",
+      "example_snippets": [
+        "My 2024 Jeep Wrangler 4XE plug-in hybrid had the 68C recall performed at a Jeep Dealer. My vehicle was working flawlessly prior to this recall. After the recall was performed, the vehicle hybrid batte",
+        "My 2024 Jeep Wrangler 4XE plug-in hybrid had the 68C recall performed at a Jeep Dealer. My vehicle was working flawlessly prior to this recall. After the recall was performed, the vehicle hybrid batte"
+      ],
+      "known_recall_count": 11,
+      "latest_known_recall_date": "30/10/2025",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "RAM",
+      "model": "1500",
+      "cluster_size": 52,
+      "date_min": "2026-02-24",
+      "date_max": "2026-09-01",
+      "recency_ratio_90d": 0.308,
+      "dominant_component": "ELECTRICAL SYSTEM",
+      "example_snippets": [
+        "The contact owns a 2025 Ram 1500. The contact stated that while driving approximately 35 MPH, the rear lights became inoperative. The message \"No Trailer Lights\" was displayed on the instrument panel.",
+        "The contact owns a 2025 Ram 1500. The contact stated that while driving approximately 35 MPH, the rear lights became inoperative. The message \"No Trailer Lights\" was displayed on the instrument panel."
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "30/07/2026",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "FORD",
+      "model": "EXPLORER",
+      "cluster_size": 60,
+      "date_min": "2025-12-09",
+      "date_max": "2026-08-12",
+      "recency_ratio_90d": 0.133,
+      "dominant_component": "STRUCTURE",
+      "example_snippets": [
+        "The contact owns a 2017 Ford Explorer. The contact received notification of NHTSA Campaign Number: 24V031000 (STRUCTURE); however, the part to do the recall repair was unavailable. The local dealer wa",
+        "The contact owns a 2016 Ford Explorer. The contact received notification of NHTSA Campaign Number: 24V031000 (STRUCTURE); however, the part to do the recall repair was unavailable. The contact stated "
+      ],
+      "known_recall_count": 33,
+      "latest_known_recall_date": "30/09/2019",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "HONDA",
+      "model": "ACCORD",
+      "cluster_size": 21,
+      "date_min": "2026-02-16",
+      "date_max": "2026-08-31",
+      "recency_ratio_90d": 0.333,
+      "dominant_component": "UNKNOWN OR OTHER",
+      "example_snippets": [
+        "A loud static sound has been sporadically coming out of my 2016 Honda Accord, which startled me and my daughter while driving a couple of times while driving. This sound appears to come out of the spe",
+        "A loud static sound has been sporadically coming out of my 2016 Honda Accord, which startled me and my daughter while driving a couple of times while driving. This sound appears to come out of the spe"
+      ],
+      "known_recall_count": 6,
+      "latest_known_recall_date": "28/05/2020",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "FORD",
+      "model": "FUSION",
+      "cluster_size": 28,
+      "date_min": "2025-04-18",
+      "date_max": "2026-08-13",
+      "recency_ratio_90d": 0.179,
+      "dominant_component": "ENGINE",
+      "example_snippets": [
+        "I am reporting a serious recurring safety concern involving a 2017 Ford Fusion SE with a 1.5L EcoBoost engine. The vehicle was purchased used in August 2022 with approximately 50,000 miles. Within mon",
+        "I am reporting a serious recurring safety concern involving a 2017 Ford Fusion SE with a 1.5L EcoBoost engine. The vehicle was purchased used in August 2022 with approximately 50,000 miles. Within mon"
+      ],
+      "known_recall_count": 13,
+      "latest_known_recall_date": "29/08/2019",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "RAM",
+      "model": "1500",
+      "cluster_size": 19,
+      "date_min": "2026-03-10",
+      "date_max": "2026-07-17",
+      "recency_ratio_90d": 0.158,
+      "dominant_component": "ELECTRICAL SYSTEM",
+      "example_snippets": [
+        "I am filing a formal safety complaint regarding a recurring, dangerous safety violation in my 2022 Ram truck. The entire Uconnect infotainment screen completely blacks out, freezes, and enters an unex",
+        "I am filing a formal safety complaint regarding a recurring, dangerous safety violation in my 2022 Ram truck. The entire Uconnect infotainment screen completely blacks out, freezes, and enters an unex"
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "30/07/2026",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "HONDA",
+      "model": "ODYSSEY",
+      "cluster_size": 19,
+      "date_min": "2026-03-06",
+      "date_max": "2026-07-01",
+      "recency_ratio_90d": 0.158,
+      "dominant_component": "ELECTRICAL SYSTEM",
+      "example_snippets": [
+        "In mid-March 2026, the power tailgate on my [year] Honda Odyssey lost power entirely. It does not respond to the key fob, the tailgate button, or the dashboard button \u00e2\u0080\u0094 it will not open or close by ",
+        "In mid-March 2026, the power tailgate on my [year] Honda Odyssey lost power entirely. It does not respond to the key fob, the tailgate button, or the dashboard button \u00e2\u0080\u0094 it will not open or close by "
+      ],
+      "known_recall_count": 2,
+      "latest_known_recall_date": "21/05/2026",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "FORD",
+      "model": "EDGE",
+      "cluster_size": 15,
+      "date_min": "2025-09-10",
+      "date_max": "2026-07-02",
+      "recency_ratio_90d": 0.067,
+      "dominant_component": "UNKNOWN OR OTHER",
+      "example_snippets": [
+        "Back up camera displays upside down image when vehicle is placed in Reverse making it extremely difficult to determine images pertaining to the safe operation of my vehicle while performing backing up",
+        "The backup camera glitches repeatedly.  Have to put in park then reverse and repeat until it displays.  When it is producing the error, the alerts are not received to assist with alerting the driver o"
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "27/03/2017",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "JEEP",
+      "model": "GRAND CHEROKEE",
+      "cluster_size": 20,
+      "date_min": "2025-11-21",
+      "date_max": "2026-05-20",
+      "recency_ratio_90d": 0.0,
+      "dominant_component": "ELECTRICAL SYSTEM",
+      "example_snippets": [
+        "Subject: 2024 Jeep Grand Cherokee 4xe Safety Defects, Recall Failures, and Loss of Safe Vehicle Use Complaint Narrative: I am the owner of a 2024 Jeep Grand Cherokee 4xe plug-in hybrid vehicle manufac",
+        "I am the owner of a 2024 Jeep Grand Cherokee 4xe which is currently subject to two urgent safety recalls: Recall 68C (NHTSA 25V-741) regarding a high-voltage battery fire risk, and Recall 95B (NHTSA 2"
+      ],
+      "known_recall_count": 15,
+      "latest_known_recall_date": "30/10/2025",
+      "is_emerging_signal": false
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL Y",
+      "cluster_size": 30,
+      "date_min": "2025-10-28",
+      "date_max": "2026-04-23",
+      "recency_ratio_90d": 0.0,
+      "dominant_component": "UNKNOWN OR OTHER",
+      "example_snippets": [
+        "My 2026 Tesla Model Y front trunk (\"frunk\"), an Austin, Mar 2026 build, lacks internal lighting & emergency release (unlike 2025 models; the change started Oct 2025). Frunk size/capacity remained unch",
+        "My 2026 Tesla Model Y front trunk (\"frunk\"), an Austin, Mar 2026 build, lacks internal lighting & emergency release (unlike 2025 models; the change started Oct 2025). Frunk size/capacity remained unch"
+      ],
+      "known_recall_count": 8,
+      "latest_known_recall_date": "30/05/2025",
+      "is_emerging_signal": false
+    }
+  ]
+}
