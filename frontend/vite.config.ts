@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-vercel';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
@@ -16,9 +16,8 @@ export default defineConfig({
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
 
-			// adapter-node: self-hostable standalone Node.js server, not tied to
-			// a specific platform like Vercel/Netlify. `npm run build` produces
-			// build/, run in production with `node build/index.js`.
+			// The backend (FastAPI + a 644MB DuckDB warehouse) can't run on
+			// Vercel's serverless functions, so only the frontend deploys there.
 			adapter: adapter()
 		})
 	]

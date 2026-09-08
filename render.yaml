@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: automotive-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: bash backend/start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      # Set this to the deployed Vercel URL, e.g. https://your-app.vercel.app
+      - key: CORS_ORIGINS
+        sync: false
+      # GitHub Release asset URL for data/warehouse/automotive.duckdb (644MB,
+      # gitignored — see README.md#deploying)
+      - key: WAREHOUSE_URL
+        sync: false
+      # Optional — only /api/assistant/ask needs it
+      - key: GEMINI_API_KEY
+        sync: false

@@ -19,5 +19,5 @@ def get_client():
 
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        raise RuntimeError("GEMINI_API_KEY not set in backend/.env")
+        raise RuntimeError("GEMINI_API_KEY not set (backend/.env locally, an env var in production)")
     return genai.Client(api_key=api_key)

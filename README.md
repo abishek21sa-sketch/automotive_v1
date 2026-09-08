@@ -13,6 +13,7 @@ status, and a numbered list of every real bug found while building this
 - `data/raw/`, `data/warehouse/` — gitignored; regenerate with the pipeline scripts
 - `frontend/` — SvelteKit + MapLibre GL app, ten sidebar tabs
 - `docs/` — architecture, methodology, and the full bug/decision log
+- `render.yaml`, `backend/start.sh` — Render backend deploy config, see [Deploying](#deploying)
 
 ## Building the warehouse
 
@@ -76,37 +77,52 @@ Frontend expects the backend on `localhost:8010` by default
 
 ## Deploying
 
-Both halves are configured entirely through environment variables — no code
-changes needed to point at a real domain.
+Split deployment: **frontend on Vercel, backend on Render.** Vercel's
+serverless functions can't host the backend — it needs a real persistent
+process plus the 644MB DuckDB warehouse on disk, neither of which fits a
+stateless function with a 250MB size cap.
 
-**Backend** — set `CORS_ORIGINS` to the frontend's real origin(s) (comma-
-separated for more than one) and run uvicorn bound to all interfaces:
+### Backend (Render)
 
-```bash
-cd backend
-CORS_ORIGINS=https://app.example.com uvicorn app.main:app --host 0.0.0.0 --port 8010
-```
+The warehouse isn't in git (`data/` is gitignored, and 644MB is well past
+GitHub's 100MB per-file limit anyway), so it's fetched from a GitHub
+Release asset at boot by `backend/start.sh`:
 
-Defaults to allowing only `http://localhost:5173` (the dev server) if unset.
+1. Build the warehouse locally (see [Building the warehouse](#building-the-warehouse)
+   above), then publish `data/warehouse/automotive.duckdb` as a
+   [GitHub Release](../../releases/new) asset on this repo (Releases support
+   files up to 2GB, unlike a normal git commit). Copy the asset's direct
+   download URL.
+2. On [render.com](https://render.com), New → Blueprint, point it at this
+   repo — it picks up [`render.yaml`](render.yaml) automatically. Or create
+   a Web Service manually with build command `pip install -r backend/requirements.txt`
+   and start command `bash backend/start.sh`.
+3. Set these environment variables on the Render service:
+   - `WAREHOUSE_URL` — the Release asset URL from step 1
+   - `CORS_ORIGINS` — the Vercel frontend's URL, once you have it (step below)
+   - `GEMINI_API_KEY` — optional, only `/api/assistant/ask` needs it
 
-**Frontend** — the app uses `@sveltejs/adapter-node`, so `npm run build`
-produces a self-hostable Node server rather than a static site. Point it at
-the deployed backend at build time via `VITE_API_BASE` (baked into the
-client bundle, like all Vite env vars — there's no runtime override):
+Render's free tier sleeps after ~15 min idle, so the first request after a
+gap takes 30-60s to wake up (plus the warehouse download on a fresh
+container) — expected for a free demo host, not a bug.
 
-```bash
-cd frontend
-npm install
-VITE_API_BASE=https://api.example.com npm run build
-PORT=4173 node build/index.js
-```
+### Frontend (Vercel)
 
-`node build/index.js` reads standard adapter-node env vars: `PORT` (default
-3000), `HOST` (default `0.0.0.0`), and `ORIGIN` (set this to the frontend's
-own public URL, e.g. `https://app.example.com`, if you hit CSRF/form-action
-errors behind a reverse proxy). Verified working: `npm run build` then
-`node build/index.js` serves the full app, including the `/methodology`
-route, correctly.
+Uses `@sveltejs/adapter-vercel` (see [vite.config.ts](frontend/vite.config.ts)),
+so this is a standard Vercel SvelteKit import:
+
+1. On [vercel.com](https://vercel.com), New Project → import this repo,
+   with **Root Directory** set to `frontend`.
+2. Set the environment variable `VITE_API_BASE` to the Render backend's URL
+   (e.g. `https://automotive-backend.onrender.com`) — it's baked into the
+   client bundle at build time, like all Vite env vars.
+3. Deploy. Then go back and set `CORS_ORIGINS` on Render to the resulting
+   `*.vercel.app` URL.
+
+Note for Windows: `npm run build` fails locally on Windows with an `EPERM
+symlink` error — `adapter-vercel` needs symlink support Windows blocks
+without Developer Mode enabled. Harmless for actual deployment, since
+Vercel's own build runs on Linux; it only blocks a local sanity-check build.
 
 ## Testing
 
